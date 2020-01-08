@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Gelasio', serif;
     min-height: 100vh;
 }
 
@@ -20,43 +20,40 @@ header {
     background-size: cover;
     margin: 0 auto;
     padding: 0;
-    height: 416px;
+    height: 250px;
     color: white;
     text-shadow: 0 2px 5px rgba(0,0,0,0.12);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 header h1 {
-    text-align: center;
     margin: 0;
-    padding-top: 15vh;
+    padding-top: 8vh;
+    padding-left: 2%;
     font-size: 3rem;
 }
 
 header h2 {
-    text-align: center;
+    padding-left: 2%;
     font-size: 2rem;
 }
 
 #pageTitle,  #date {
     margin: 2rem 0;
-    color: #536372;
 }
 
-#listTitle {
-    color: #536372;
-}
 
 main ul li {
     list-style-type: circle;
 }
-#greeting {
-    margin-bottom: 10vh;
+
+main h2 {
+    margin: 2rem 0 0 0;
 }
 
 footer {
     width: 100vw;
-    background-color: #536372;
+    background-color: black;
     color: white;
     padding: .5rem;
     text-align: center;
