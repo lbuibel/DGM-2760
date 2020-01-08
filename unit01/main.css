@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    width: 96%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("../unit01/images/hero.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0;
+    height: 416px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 15%;
+    font-size: 3rem;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#pageTitle,  #date {
+    margin: 2rem 0;
+    color: #536372;
+}
+
+#listTitle {
+    color: #536372;
+}
+
+main ul li {
+    list-style-type: circle;
+}
+
+
+footer {
+    width: 100vw;
+    background-color: #536372;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: .75rem;
+    position: fixed;
+    bottom: 0;
+}
