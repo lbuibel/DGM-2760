@@ -22,7 +22,7 @@ function guess() {
     const feedback = document.querySelector('#feedback')
 
     if (userGuess == correctNumber) {
-        feedback.innerText = `Correctomundo`
+        feedback.innerText = `That's correct!`
         award()
     } else if (userGuess > correctNumber && userGuess < 16){
         feedback.innerText = `Too high, try again.`
@@ -38,6 +38,7 @@ function guess() {
 
 function award() {
     let imgPath = '#'
+    
     switch(totalGuesses){
         case 1:
         case 2:
@@ -52,10 +53,15 @@ function award() {
         default:
             imgPath = 'images/third.png'
     }
+
     const awardImg = document.createElement('img')
     awardImg.setAttribute('src', imgPath)
     const ribbon = document.querySelector('#ribbon')
 
-    ribbon.appendChild(awardImg)
+    if (ribbon.hasChildNodes()){
+        return
+    } else {
+        ribbon.appendChild(awardImg)
+    }
     // only append child if the ribbon element doen not have any child nodes yet
 }

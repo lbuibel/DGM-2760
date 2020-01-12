@@ -13,25 +13,26 @@ main {
     width: 96%;
     min-width: 700px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header {
-    background-image: url("images/hero.jpg");
+    background-image: url("images/Untitled-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
     padding: 0;
     height: 350px;
+    max-width: 100vw;
     color: white;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.12);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 }
 
 header h1 {
     margin: 0;
     padding-top: 4vh;
     padding-left: 2%;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 header h2 {
@@ -48,17 +49,41 @@ main ul li {
     list-style-type: circle;
 }
 
-main h2 {
+/* main h2 {
     margin: 2rem 0 0 0;
-}
+} */
 
 .gameBoard {
     max-width: 100%;
-    border: solid red;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    border-radius: 4px;
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    background-color: #EEEEEE;
+}
+
+button {
+    padding: .5rem;
+    margin: .25rem;
+    width: 9rem;
+    border-radius: 4px;
+    background-color:#7BC813DB;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color:rgba(111, 181, 20, 0.859);
+}
+
+input {
+    width: 9rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-bottom: 4px;
 }
 
 .gameTile {
@@ -89,11 +114,10 @@ main h2 {
 
 footer {
     width: 100vw;
-    background-color: black;
+    background-color: #00B6D1;
     color: white;
     padding: .5rem;
     text-align: center;
     font-size: .75rem;
-    position: fixed;
-    bottom: 0;
+    margin-top: 5vh;
 }
