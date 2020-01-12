@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    width: 96%;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    height: 350px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 4vh;
+    padding-left: 2%;
+    font-size: 3rem;
+}
+
+header h2 {
+    padding-left: 2%;
+    font-size: 2rem;
+}
+
+#pageTitle,  #date {
+    margin: 2rem 0;
+}
+
+
+main ul li {
+    list-style-type: circle;
+}
+
+main h2 {
+    margin: 2rem 0 0 0;
+}
+
+.gameBoard {
+    max-width: 100%;
+    border: solid red;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gameTile {
+    height: 90%;
+    padding: .5rem;
+}
+
+.play {
+    width: 15%;
+}
+
+.try {
+    width: 15%;
+}
+
+.feedback {
+    width: 30%;
+}
+
+.award {
+    width: 35%;
+}
+
+#ribbon img {
+    max-width:50%;
+    padding-top: 1rem;
+}
+
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+    position: fixed;
+    bottom: 0;
+}
