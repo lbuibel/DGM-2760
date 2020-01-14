@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    width: 96%;
+    min-width: 700px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url("images/fortune-teller.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 4vh;
+    padding-left: 2%;
+    font-size: 6rem;
+}
+
+header h2 {
+    padding-left: 2%;
+    font-size: 2rem;
+}
+
+#pageTitle,  #date {
+    margin: 2rem 0;
+}
+
+main ul li {
+    list-style-type: circle;
+}
+
+#fortune {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+button {
+    padding: .5rem;
+    margin-top: .75rem;
+    width: 9rem;
+    border-radius: 4px;
+    background-color:rgb(79, 53, 62);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #442D35;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #442D35;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 5vh;
+}
