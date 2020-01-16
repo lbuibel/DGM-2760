@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    /* width: 96%; */
+    min-width: 700px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url("images/nursery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 360px;
+    width: 100%;
+    color: white;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    min-width: 900px;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 4vh;
+    padding-left: 2%;
+    font-size: 8rem;
+}
+
+header h2 {
+    padding-left: 2%;
+    font-size: 4rem;
+}
+
+
+main ul li {
+    list-style-type: circle;
+}
+
+.container {
+    width: 96%;
+    margin: 2% auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 40%;
+}
+
+.results-container {
+    padding: .5rem;
+    background-color: #dfdfdf;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.red {
+    color: #FE5252;
+}
+
+.errorMessages {
+    color: #FE5252; 
+    background-color: #FAFFBD;
+    padding: .5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button {
+    padding: .5rem;
+    margin-top: .25rem;
+    width: 75%;
+    border-radius: 4px;
+    background-color: #4CAF51;
+    color: white;
+    font-size: .85rem;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button:hover {
+    background-color: rgb(56, 132, 59);
+}
+
+
+
+footer {
+    background-color: rgb(56, 132, 59);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 5vh;
+}

@@ -3,7 +3,7 @@ document.querySelector('header > h1').innerText = "Fortune Teller"
 document.querySelector('header > h2').innerText = "Learn Your Fate"
 
 // Page Title
-document.querySelector('#pageTitle').innerText = "High / Low Guessing Game"
+document.querySelector('#pageTitle').innerText = "The Fortune Teller"
 
 // ----------- Fortune ------------
 

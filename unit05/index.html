@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit05</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <body>
+    <header>
+        <h1></h1>
+        <h2></h2>
+    </header>
+    <main>
+        <h1 id="pageTitle" class="container"></h1>
+
+        <div class="container flex-row">
+            <div class="left-column">
+                <h2 id="listTitle">What I learned</h2>
+                <ul>
+                    <li>Implement error checking on incoming values.</li>
+                    <li>Create and manipulate values in an array.</li>
+                    <li>Implement Event Handlers.</li>
+                    <li>Implement Event Listeners.</li>
+                </ul>
+            
+                <h2>Add Tree</h2>
+                <button id="add_aspen">Add an Aspen Tree to list</button>
+                <button id="add_maple">Add a Maple Tree to list</button>
+                <button id="add_oak">Add an Oak Tree to the start of the list</button><br><br>
+
+        
+                <h2>Remove Tree</h2>
+                <button id="remove_first">Remove first tree</button>
+                <button id="remove_second">Remove second tree</button>
+                <button id="remove_last">Remove the last tree</button><br><br>
+
+                <h2>Manipulating the list</h2>
+                <button id="sortTrees">Sort the trees alphabetically</button>
+                <button id="lowerCase">Make all trees lower case</button><br><br>
+
+                <h2>Getting any tree from the list</h2>
+                <button id="showName3">What is the name of tree number three</button>
+                <button id="showName4">What is the name of tree number four</button>
+
+            </div>
+
+            <div class="right-column">
+                <h2>The Tree List</h2>
+                <div class="results-container">
+                    <p id="results"></p>
+                    <br>
+                    <p id="list-length" class="red"></p>
+                </div>
+                <br>
+                <h2>Error Messages</h2>
+                <p id="error" class="errorMessages"></p>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+            <p>Assignment for DGM2760 by Logan Uibel</p>
+        </footer>
+
+    <script type="text/JavaScript" src="js/main.js"></script>
+</body>
+</html>
