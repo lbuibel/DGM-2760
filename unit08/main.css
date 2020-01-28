@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    /* width: 96%; */
+    min-width: 700px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url("images/hero_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    min-width: 900px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 4vh;
+    padding-left: 2%;
+    font-size: 6rem;
+}
+
+header h2 {
+    padding-left: 2%;
+    font-size: 3rem;
+}
+
+
+main ul li {
+    list-style-type: circle;
+}
+
+.container {
+    width: 96%;
+    margin: 2% auto;
+}
+
+#stem {
+    margin-bottom: 1rem;
+}
+
+#feedback {
+    margin-top: 1rem;
+}
+
+button {
+    padding: .75rem;
+    width: 100%;
+    background-color: #586A74;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    margin: 0;
+    text-align: left;
+}
+
+button:hover {
+    background-color: rgb(51, 70, 81);
+}
+
+.user-message {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: rgb(51, 70, 81);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 6vh;
+}
