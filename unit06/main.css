@@ -17,16 +17,16 @@ main {
 }
 
 header {
-    background-image: url("images/hero.jpg");
+    background-image: url("images/haunted_house.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 400px;
+    height: 360px;
     width: 100%;
     text-shadow: 3px 3px 1px rgba(0,0,0,0.2);
     min-width: 900px;
-    color: red;
+    color: white;
 }
 
 header h1 {
@@ -78,7 +78,7 @@ main ul li {
 }
 
 span {
-    color: red;
+    color: #D7887D;
     font-weight: bold;
 }
 button {
@@ -86,7 +86,7 @@ button {
     margin-top: .25rem;
     width: 10rem;
     border-radius: 4px;
-    background-color: #4CAF51;
+    background-color: #1B728A;
     color: white;
     font-size: .85rem;
     text-transform: uppercase;
@@ -95,11 +95,11 @@ button {
 }
 
 button:hover {
-    background-color: rgb(56, 132, 59);
+    background-color: rgb(22, 93, 113);
 }
 
 footer {
-    background-color: rgb(56, 132, 59);
+    background-color: #1B728A;
     color: white;
     padding: .5rem;
     text-align: center;
