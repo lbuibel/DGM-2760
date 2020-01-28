@@ -33,7 +33,3 @@ function tellStory() {
   const output = document.querySelector("#story");
   output.innerHTML = myStory;
 }
-
-
-// teacher bro ghost car bro taco candy
-// hot dark wet
