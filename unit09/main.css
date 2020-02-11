@@ -9,7 +9,7 @@ body {
     font-family: Helvetica;
 }
 
-
+/* TABLET/DESKTOP NAVIGATION */
 @media only screen and (min-width: 601px) {
     div.smallMenuLink {display: none;}
     nav#smallNavArea {display: none;}
@@ -24,7 +24,7 @@ body {
     #primaryNavigation li a {
         display: block;
         font-size: 1em;
-        padding: 1.2em .9em;
+        padding: 1em 2em 1em 0;
         color: rgba(255,255,255, 0.9);
         text-transform: uppercase;
         text-decoration: none;
@@ -35,6 +35,7 @@ body {
     }
 }
 
+/* PHONE NAVIGATION STYLING */
 @media only screen and (max-width: 600px) {
     #smallNavArea{display: block}
     #primaryNavigation{display: none;}
@@ -67,4 +68,50 @@ body {
         text-decoration: none;
         padding: .6rem;
     }
+}
+
+
+#heroSection {
+    height: 50vh;
+    width: 92%;
+    margin: 2rem auto;
+    display: flex;
+}
+
+#heroText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heroImg {
+    width: 60%;
+    background-image: url('./images/rsv4.jpg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#heroText h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+}
+
+#mainContent {
+    width: 92%;
+    margin: 2rem auto;
+}
+
+#objectives {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: rgb(51, 70, 81);
+    color: white;
+    padding: .1rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 8vh;
 }
