@@ -53,7 +53,7 @@ body {
         padding: .6rem 0;
         text-align: center;
         text-decoration: none;
-        color: #FFF;
+        color: white;
         background-color: rgba(0,0,0,0.2);
     }
 
@@ -64,7 +64,7 @@ body {
 
     .smallMenuLink a {
         display: block;
-        color: #FFF;
+        color: white;
         text-decoration: none;
         padding: .6rem;
     }
@@ -138,5 +138,4 @@ footer {
     padding: .1rem;
     text-align: center;
     font-size: .75rem;
-    margin-top: 8vh;
 }
