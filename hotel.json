@@ -1,0 +1,28 @@
+{
+    "hotels": [
+      {
+        "name": "Four Seasons",
+        "rooms": "250",
+        "gym": "24 Hour Full Amenity",
+        "roomTypes": ["King", "Queen"],
+        "address": "Neverland Way",
+        "picture": "images/room01.jpg"
+      },
+      {
+        "name": "The Embassy Inn",
+        "rooms": "500",
+        "gym": "Large with Steam Room",
+        "roomTypes": ["King", "Queen", "Double"],
+        "address": "123 East Narnia",
+        "picture": "images/room02.jpg"
+      },
+      {
+        "name": "The Grand",
+        "rooms": "750",
+        "gym": "None",
+        "roomTypes": ["King", "Queen", "Double", "Single", "Bunk"],
+        "address": "142 Sesame Street",
+        "picture": "images/room03.jpg"
+      }
+    ]
+  }

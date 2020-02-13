@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+
+ h1, h2, p {
+     margin: 0;
+ }
+
+main {
+    width: 96%;
+    /* min-width: 700px; */
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url("images/hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 100%;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 4vh;
+    padding-left: 2%;
+    font-size: 6rem;
+}
+
+header h2 {
+    padding-left: 2%;
+    font-size: 2rem;
+}
+
+
+main ul li {
+    list-style-type: circle;
+}
+
+.container {
+    width: 96%;
+    margin: 2% auto;
+}
+
+#stem {
+    margin-bottom: 1rem;
+}
+
+#feedback {
+    margin-top: 1rem;
+}
+
+.buttonContainer {
+    margin: 1rem 0;
+}
+
+button {
+    padding: .75rem;
+    width: 16rem;
+    color: #586A74;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #586A74;
+    margin-right: 3px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(51, 70, 81);
+    color: white;
+    transition: .5s;
+}
+
+.user-message {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #424430;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 8vh;
+}
