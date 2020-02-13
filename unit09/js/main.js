@@ -1,36 +1,21 @@
-// Heading Info
-// document.querySelector('header > h1').innerText = "V4 Power"
-// document.querySelector('header > h2').innerText = "Literal Objects"
+function duplicateMenu() {
+    // get all of anchor elements from the top menu
+    let topList = document.querySelectorAll('ul#primaryNavigation li a')
 
-// // Page Title
-// document.querySelector('#pageTitle').innerText = "Grants Tomb"
+    // create new list items for bottom nav
+    let newList = document.createElement('ul')
 
-// const question = {
-//     stem: "Who is buried in Grants Tomb?",
-//     option1: "Julian",
-//     option2: "Alex",
-//     option3: "Grant",
-//     option4: "Luis",
-//     correct: 3,
-//     display: () => {
-//       document.querySelector('#stem').textContent = question.stem
-//       document.querySelector('#answer1').textContent = question.option1
-//       document.querySelector('#answer2').textContent = question.option2
-//       document.querySelector('#answer3').textContent = question.option3
-//       document.querySelector('#answer4').textContent = question.option4
-//     },
-//     checkAnswer: (choice) => {
-//       if (choice === question.correct) {
-//         document.querySelector(".feedback").textContent = "Correct!"
-//       } else {
-//         document.querySelector(".feedback").textContent = "Incorrect, try again."
-//       }
-//     }
-// }
+    topList.forEach(menuItem => {
+        let newUl = document.createElement('ul')
+        let newLI = document.createElement('li')
+        let newLink = document.createElement('a')
+        
+        newLink.setAttribute('href', menuItem.getAttribute('href'))
+        newLI.appendChild(newLink)
+        document.querySelector('#smallNavArea').appendChild(newUl)
+        newUl.appendChild(newLI)
+        newLink.textContent = menuItem.innerText
+    })
+}
 
-// document.querySelector('#answer1').addEventListener('click', () => question.checkAnswer(1))
-// document.querySelector('#answer2').addEventListener('click', () => question.checkAnswer(2))
-// document.querySelector('#answer3').addEventListener('click', () => question.checkAnswer(3))
-// document.querySelector('#answer4').addEventListener('click', () => question.checkAnswer(4))
-
-// question.display()
+duplicateMenu()

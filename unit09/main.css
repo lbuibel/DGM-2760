@@ -108,9 +108,11 @@ body {
 }
 
 #mainContent {
-    width: 92%;
+    /* width: 92%; */
+    padding: 2% 4%;
     margin: 2rem auto;
 }
+
 
 #mainContent h2 {
     margin-bottom: .75rem;
