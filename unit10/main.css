@@ -24,7 +24,7 @@ header {
     padding: 0;
     height: 400px;
     width: 100%;
-    text-shadow: 3px 3px 1px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     color: white;
 }
 
@@ -65,17 +65,17 @@ main ul li {
 button {
     padding: .75rem;
     width: 16rem;
-    color: #586A74;
+    color: #636A47;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
-    border: 2px solid #586A74;
+    border: 2px solid #636A47;
     margin-right: 3px;
     border-radius: 3px;
 }
 
 button:hover {
-    background-color: rgb(51, 70, 81);
+    background-color: #636A47;
     color: white;
     transition: .5s;
 }
@@ -85,7 +85,7 @@ button:hover {
 }
 
 footer {
-    background-color: #424430;
+    background-color: #636A47;
     color: white;
     padding: .5rem;
     text-align: center;

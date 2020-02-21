@@ -75,7 +75,10 @@ document.querySelector('#sortTrees').onclick = () => {
     if (trees.length < 1){
         error.innerText = "No trees to sort"
     } else {
-        trees.sort()
+        // trees.sort()
+        trees.sort((a, b) => {
+            return a.toLocaleLowerCase().localeCompare(b.toLocaleLowerCase());
+          });
         treeList()
     }
 }
@@ -84,13 +87,13 @@ document.querySelector('#sortTrees').onclick = () => {
 document.querySelector('#lowerCase').onclick = () => {
     if (trees.length < 1){
         error.innerText = "No trees in list to make lower-case"
-    } else {
-    let selectionList = ''
-    trees.forEach(tree => {
-        selectionList += `${tree.toLowerCase()}<br>`
-    })
-    results.innerHTML = selectionList
-}
+    }
+    else {
+        let selectionList = []
+        selectionList = trees.map(tree => tree.toLowerCase())
+        trees.splice(0, selectionList.length, ...selectionList)
+        treeList()
+    }
 }
 
 // showing specific names from the array
