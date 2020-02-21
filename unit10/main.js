@@ -6,12 +6,10 @@ document.querySelector('header > h2').innerText = "Check in Anytime You Like"
 document.querySelector('#pageTitle').innerText = "Hotel California"
 
 
-
 async function getHotelData() {
     try {
-        const response = await fetch('../hotel.json')
+        const response = await fetch('hotel.json')
         return await response.json()
-
     } catch (error) {
         console.error(error)
     }
@@ -22,16 +20,16 @@ let hotelData = {}
 getHotelData().then(data => hotelData = data)
 
 document.querySelector("#fourSeasons").addEventListener("click", hotelInfo);
-document.querySelector("#embassy").addEventListener("click", hotelInfo);
+document.querySelector("#theEmbassy").addEventListener("click", hotelInfo);
 document.querySelector("#theGrand").addEventListener("click", hotelInfo);
 
 function hotelInfo(event) {
-    let userChoice = hotelData.hotels.find(hotel => {
-      return event.target.id == hotel.name.toLowerCase();
+    let hotelChoice = hotelData.hotels.find(hotel => {
+      return event.target.id.toLowerCase() === hotel.name.toLowerCase().replace(/\s/g, '')
     });
-    document.querySelector("#address").textContent = `Address: ${userChoice.address}`;
-    document.querySelector("#rooms").textContent = userChoice.rooms;
-    document.querySelector("#gym").textContent = userChoice.gym;
-    document.querySelector("#type").textContent = userChoice.roomTypes;
-    document.querySelector("#picture").src = userChoice.picture;
+    document.querySelector("#address").textContent = hotelChoice.address
+    document.querySelector("#rooms").textContent = hotelChoice.rooms
+    document.querySelector("#gym").textContent = hotelChoice.gym
+    document.querySelector("#type").textContent = hotelChoice.roomTypes
+    document.querySelector("#picture").src = hotelChoice.picture
   }

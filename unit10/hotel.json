@@ -9,7 +9,7 @@
         "picture": "images/room01.jpg"
       },
       {
-        "name": "The Embassy Inn",
+        "name": "The Embassy",
         "rooms": "500",
         "gym": "Large with Steam Room",
         "roomTypes": ["King", "Queen", "Double"],
