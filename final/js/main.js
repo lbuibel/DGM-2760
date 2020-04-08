@@ -2,11 +2,10 @@
 document.querySelector('header > h1').innerText = "Moto Finder"
 // document.querySelector('header > h2').innerText = "Check in Anytime You Like"
 // Page Title
-document.querySelector('#pageTitle').innerText = "Search For Motorcycles"
-
-
+document.querySelector('#pageTitle').innerText = "Select Motorcycle Manufacturer"
 
 const motoContainer = document.querySelector('#moto-section')
+
 
 
 async function getMotoBrands () {
@@ -29,9 +28,26 @@ async function getMotoModels () {
 
 let motoBrands = {}
 let motoModels = {}
+let brandArray = []
 
-getMotoBrands().then(data => motoBrands = data)
+getMotoBrands().then(data => {
+    brandArray = data.data
+    var sel = document.querySelector('#dropDown');
+    for(var i = 0; i < brandArray.length; i++) {
+    var opt = document.createElement('option');
+    opt.innerHTML = brandArray[i].name;
+    opt.value = brandArray[i];
+    sel.appendChild(opt);
+}
+    motoBrands = data
+})
+
 getMotoModels().then(data => motoModels = data)
+
+
+
+
+
 
 // selected individual buttons (didn't use anchor tags)
 document.querySelector("#ducati").addEventListener("click", brandInfo);
@@ -43,7 +59,9 @@ function brandInfo(event) {
         return event.target.id ===  brand.name.toLowerCase()
     })
     let brandInfo = motoModels.data.filter(id => brandChoice.id === id.brand_id)
+    let brandNames = motoBrands.data.map(i => i.name)
     console.log(brandChoice)
+    console.log(brandNames)
     htmlSection = document.querySelector('#moto-section')
     printMotos(brandInfo, brandChoice, htmlSection)
 }
@@ -66,7 +84,5 @@ function printMotos(array, brand, section) {
     listCard.appendChild(modelList)
     section.appendChild(listCard)
 }
-
-
 
 

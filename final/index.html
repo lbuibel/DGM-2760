@@ -16,14 +16,24 @@
     <main>
         <h1 id="pageTitle" class="container"></h1>
 
-        <div class="container">    
+        <div class="container"> 
+            <div id="select"></div>
+            <select id="dropDown"></select>
+<!--             
+            <label for"manufacturer">Enter Manufacturer Name</label>   
+            <input type="text" id="manufacturer" name="manufacturer"><br>
+            <button type="button" onclick="getInputValue();">Enter</button> -->
+            
             <div class="buttonContainer">
                 <button id="ducati">Ducati</button>
                 <button id="bmw">BMW</button>
                 <button id="triumph">Triumph</button>
             </div>
 
-            <div class="card-container" id="moto-section"></div>
+            <div class="content-container">
+                <div class="card-container" id="moto-section"></div>
+                <div class="current-selection"></div>
+            </div>
         </div>
 
 
