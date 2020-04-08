@@ -1,11 +1,12 @@
 // Heading Info
 document.querySelector('header > h1').innerText = "Moto Finder"
 // document.querySelector('header > h2').innerText = "Check in Anytime You Like"
-
 // Page Title
 document.querySelector('#pageTitle').innerText = "Search For Motorcycles"
 
 
+
+const motoContainer = document.querySelector('#moto-section')
 
 
 async function getMotoBrands () {
@@ -43,7 +44,23 @@ function brandInfo(event) {
     })
     let brandInfo = motoModels.data.filter(id => brandChoice.id === id.brand_id)
     console.log(brandChoice)
-    console.log(brandInfo)
+    htmlSection = document.querySelector('#moto-section')
+    printMotos(brandInfo, brandChoice, htmlSection)
 }
+
+function printMotos(array, brand, section) {
+    let listTitle = document.createElement('h3')
+    listTitle.textContent = brand.name
+    let modelList = document.createElement('ul')
+    array.forEach(moto => {
+        let listItem = document.createElement('li')
+        listItem.textContent = moto.name
+        modelList.appendChild(listItem)
+    })
+    section.appendChild(listTitle)
+    section.appendChild(modelList)
+}
+
+
 
 
