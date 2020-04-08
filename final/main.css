@@ -81,7 +81,17 @@ footer {
     margin-top: 8vh;
 }
 
+.card-container {
+    display:flex;
+    flex-wrap: wrap;
+}
 
-.card {
+.moto-card {
     border: solid red;
+    width: 250px;
+    padding: 5px;
+}
+
+.moto-card ul {
+    list-style-type: circle;
 }

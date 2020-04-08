@@ -49,16 +49,22 @@ function brandInfo(event) {
 }
 
 function printMotos(array, brand, section) {
+    let listCard = document.createElement('div')
+    listCard.className = "moto-card"
+
     let listTitle = document.createElement('h3')
     listTitle.textContent = brand.name
+
     let modelList = document.createElement('ul')
+
     array.forEach(moto => {
         let listItem = document.createElement('li')
         listItem.textContent = moto.name
         modelList.appendChild(listItem)
     })
-    section.appendChild(listTitle)
-    section.appendChild(modelList)
+    listCard.appendChild(listTitle)
+    listCard.appendChild(modelList)
+    section.appendChild(listCard)
 }
 
 
